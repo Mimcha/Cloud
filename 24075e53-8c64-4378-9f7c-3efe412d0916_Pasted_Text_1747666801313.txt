@@ -1,0 +1,87 @@
+[+] Running 1/1
+ ✔ postgres Pulled                                                                                                                                                                                                             1.8s 
+[+] Building 0.9s (3/5)                                                                                                                                                                                        docker:desktop-linux
+ => [cloud-service internal] load build definition from Dockerfile                                                                                                                                                             0.0s 
+[+] Building 2.1s (7/7) FINISHED                                                                                                                                                                               docker:desktop-linux 
+ => [cloud-service internal] load build definition from Dockerfile                                                                                                                                                             0.0s
+ => => transferring dockerfile: 269B                                                                                                                                                                                           0.0s 
+ => [cloud-service internal] load metadata for docker.io/library/postgres:15                                                                                                                                                   0.0s 
+ => [cloud-service internal] load .dockerignore                                                                                                                                                                                0.0s 
+ => => transferring context: 2B                                                                                                                                                                                                0.0s 
+ => [cloud-service stage-1 1/2] FROM docker.io/library/postgres:15@sha256:b8e11f8a8b383e19589a086a78b10f9ca69a39d6c9dcdd9342a8697544e8b3a0                                                                                     1.6s
+ => => resolve docker.io/library/postgres:15@sha256:b8e11f8a8b383e19589a086a78b10f9ca69a39d6c9dcdd9342a8697544e8b3a0                                                                                                           1.6s 
+ => CACHED [cloud-service stage-1 2/2] RUN localedef -i en_US -c -f UTF-8 en_US.UTF-8                                                                                                                                          0.0s
+ => [cloud-service] exporting to image                                                                                                                                                                                         0.2s 
+ => => exporting layers                                                                                                                                                                                                        0.0s 
+ => => exporting manifest sha256:ccf537bdaf5c6fe9816f244c7c6732466ef1659f644f0f330a6f04662ebce359                                                                                                                              0.0s 
+ => => exporting config sha256:69de2374b22485b87387370e1a1cdbe7ee939ed6b2ea32ad219264cb85109582                                                                                                                                0.0s 
+ => => exporting manifest list sha256:d983324428bcf69f166e19b3954f6c82be8d4574e241ca017dba07c9ac6071cb                                                                                                                         0.0s 
+ => => naming to docker.io/library/netology-diplom-backend-cloud-service:latest                                                                                                                                                0.0s 
+[+] Running 6/6g to docker.io/library/netology-diplom-backend-cloud-service:latest                                                                                                                                             0.0s 
+ ✔ Service cloud-service                              Built                                                                                                                                                                    2.8s 
+ ✔ Network netology-diplom-backend_backend-network    Created                                                                                                                                                                  0.1s 
+ ✔ Network netology-diplom-backend_default            Created                                                                                                                                                                  0.1s 
+ ✔ Container netology-diplom-backend-pgadmin-1        Created                                                                                                                                                                  0.4s 
+ ✔ Container netology-diplom-backend-postgres-1       Created                                                                                                                                                                  0.5s 
+ ✔ Container netology-diplom-backend-cloud-service-1  Created                                                                                                                                                                  0.4s 
+Attaching to cloud-service-1, pgadmin-1, postgres-1
+pgadmin-1        | chmod: /pgadmin4/pgpass: Operation not permitted
+postgres-1       |
+postgres-1       | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-1       |
+pgadmin-1        | postfix/postlog: starting the Postfix mail system
+postgres-1       | 2025-05-19 14:57:09.345 UTC [1] FATAL:  database files are incompatible with server
+postgres-1       | 2025-05-19 14:57:09.345 UTC [1] DETAIL:  The data directory was initialized by PostgreSQL version 17, which is not compatible with this version 15.13 (Debian 15.13-1.pgdg120+1).
+Gracefully stopping... (press Ctrl+C again to force)
+dependency failed to start: container netology-diplom-backend-postgres-1 exited (1)
+PS M:\Java\diplom\квест\netology-diplom-backend> docker-compose up --build
+[+] Running 0/1
+[+] Running 0/1d-service  Building                                                                                                                                                                                             0.1s 
+[+] Building 0.5s (7/7) FINISHED                                                                                                                                                                               docker:desktop-linux 
+ => [cloud-service internal] load build definition from Dockerfile                                                                                                                                                             0.0s
+ => => transferring dockerfile: 269B                                                                                                                                                                                           0.0s 
+ => WARN: LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 7)                                                                                                               0.0s 
+ => [cloud-service internal] load metadata for docker.io/library/postgres:15                                                                                                                                                   0.0s 
+ => [cloud-service internal] load .dockerignore                                                                                                                                                                                0.0s 
+ => => transferring context: 2B                                                                                                                                                                                                0.0s 
+ => [cloud-service stage-1 1/2] FROM docker.io/library/postgres:15@sha256:b8e11f8a8b383e19589a086a78b10f9ca69a39d6c9dcdd9342a8697544e8b3a0                                                                                     0.0s 
+ => => resolve docker.io/library/postgres:15@sha256:b8e11f8a8b383e19589a086a78b10f9ca69a39d6c9dcdd9342a8697544e8b3a0                                                                                                           0.0s 
+ => CACHED [cloud-service stage-1 2/2] RUN localedef -i en_US -c -f UTF-8 en_US.UTF-8                                                                                                                                          0.0s
+ => [cloud-service] exporting to image                                                                                                                                                                                         0.2s 
+ => => exporting layers                                                                                                                                                                                                        0.0s 
+ => => exporting manifest sha256:ccf537bdaf5c6fe9816f244c7c6732466ef1659f644f0f330a6f04662ebce359                                                                                                                              0.0s 
+ => => exporting config sha256:69de2374b22485b87387370e1a1cdbe7ee939ed6b2ea32ad219264cb85109582                                                                                                                                0.0s 
+ => => exporting attestation manifest sha256:2729a755da9084d9713cd4fd7f574bd591a85befa67018572eafe1ea13ddb1e5                                                                                                                  0.0s 
+ => => exporting manifest list sha256:c24e85992050aada1cd3360836ef5fa8f7fcd3b6fe77402d909bf264f8220d80                                                                                                                         0.0s 
+ => => naming to docker.io/library/netology-diplom-backend-cloud-service:latest                                                                                                                                                0.0s 
+[+] Running 4/4g to docker.io/library/netology-diplom-backend-cloud-service:latest                                                                                                                                             0.0s
+ ✔ Service cloud-service                              Built                                                                                                                                                                    0.7s 
+ ✔ Container netology-diplom-backend-pgadmin-1        Running                                                                                                                                                                  0.0s 
+ ✔ Container netology-diplom-backend-cloud-service-1  Recreated                                                                                                                                                                0.6s 
+ ✔ Container netology-diplom-backend-postgres-1       Recreated                                                                                                                                                                0.3s 
+Attaching to cloud-service-1, pgadmin-1, postgres-1
+postgres-1       | 
+postgres-1       | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-1       |                                                                                                                                                                                                                  
+postgres-1       | 2025-05-19 14:57:47.296 UTC [1] LOG:  starting PostgreSQL 17.5 (Debian 17.5-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit                                               
+postgres-1       | 2025-05-19 14:57:47.297 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1       | 2025-05-19 14:57:47.297 UTC [1] LOG:  listening on IPv6 address "::", port 5432                                                                                                                                  
+postgres-1       | 2025-05-19 14:57:47.303 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"                                                                                                               
+postgres-1       | 2025-05-19 14:57:47.313 UTC [29] LOG:  database system was shut down at 2025-05-19 14:56:46 UTC
+postgres-1       | 2025-05-19 14:57:47.325 UTC [1] LOG:  database system is ready to accept connections                                                                                                                             
+cloud-service-1  | Error: Database is uninitialized and superuser password is not specified.                                                                                                                                        
+cloud-service-1  |        You must specify POSTGRES_PASSWORD to a non-empty value for the
+cloud-service-1  |        superuser. For example, "-e POSTGRES_PASSWORD=password" on "docker run".                                                                                                                                  
+cloud-service-1  |                                                                                                                                                                                                                  
+cloud-service-1  |        You may also use "POSTGRES_HOST_AUTH_METHOD=trust" to allow all
+cloud-service-1  |        connections without a password. This is *not* recommended.                                                                                                                                                
+cloud-service-1  |                                                                                                                                                                                                                  
+cloud-service-1  |        See PostgreSQL documentation about "trust":
+cloud-service-1  |        https://www.postgresql.org/docs/current/auth-trust.html                                                                                                                                                   
+cloud-service-1 exited with code 1
+pgadmin-1        | ::1 - - [19/May/2025:14:57:53 +0000] "GET /misc/ping HTTP/1.1" 200 4 "-" "Wget"
+pgadmin-1        | ::1 - - [19/May/2025:14:58:03 +0000] "GET /misc/ping HTTP/1.1" 200 4 "-" "Wget"
+pgadmin-1        | ::1 - - [19/May/2025:14:58:13 +0000] "GET /misc/ping HTTP/1.1" 200 4 "-" "Wget"
+pgadmin-1        | ::1 - - [19/May/2025:14:58:24 +0000] "GET /misc/ping HTTP/1.1" 200 4 "-" "Wget"
+pgadmin-1        | ::1 - - [19/May/2025:14:58:34 +0000] "GET /misc/ping HTTP/1.1" 200 4 "-" "Wget"
+pgadmin-1        | ::1 - - [19/May/2025:14:58:44 +0000] "GET /misc/ping HTTP/1.1" 200 4 "-" "Wget"
