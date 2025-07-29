@@ -1,229 +1,64 @@
-CCEPTING_TRAFFIC
-2025-07-10 14:35:02 2025-07-10T11:35:02.058Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.a.c.a.jaspic.AuthConfigFactoryImpl     : Loading persistent provider registrations from [/tmp/tomcat.8080.10529721425629951596/conf/jaspic-providers.xml]
-2025-07-10 14:35:02 2025-07-10T11:35:02.073Z  INFO 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-10 14:35:02 2025-07-10T11:35:02.074Z  INFO 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-10 14:35:02 2025-07-10T11:35:02.074Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-07-10 14:35:02 2025-07-10T11:35:02.074Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-07-10 14:35:02 2025-07-10T11:35:02.074Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-07-10 14:35:02 2025-07-10T11:35:02.076Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3e729d46
-2025-07-10 14:35:02 2025-07-10T11:35:02.076Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@372e972d
-2025-07-10 14:35:02 2025-07-10T11:35:02.077Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-07-10 14:35:02 2025-07-10T11:35:02.077Z  INFO 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-07-10 14:35:02 2025-07-10T11:35:02.242Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /login
-2025-07-10 14:35:02 2025-07-10T11:35:02.399Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /login
-2025-07-10 14:35:02 Request method: POST, URL: http://localhost:8080/login
-2025-07-10 14:35:02 Using token: null
-2025-07-10 14:35:02 2025-07-10T11:35:02.416Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : No token found
-2025-07-10 14:35:02 2025-07-10T11:35:02.432Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-10 14:35:02 2025-07-10T11:35:02.446Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /login
-2025-07-10 14:35:02 2025-07-10T11:35:02.468Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={}
-2025-07-10 14:35:02 2025-07-10T11:35:02.472Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.netology_diplom_backend.controller.AuthController#login(LoginRequest)
-2025-07-10 14:35:02 2025-07-10T11:35:02.486Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2025-07-10 14:35:02 2025-07-10T11:35:02.745Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.netology_diplom_backend.dto.LoginRequest@2e13305f]
-2025-07-10 14:35:02 2025-07-10T11:35:02.764Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Created new SQL alias : u1_0
-2025-07-10 14:35:02 2025-07-10T11:35:02.765Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.example.netology_diplom_backend.model.User(2))] with identifierForTableGroup [com.example.netology_diplom_backend.model.User] for NavigablePath [com.example.netology_diplom_backend.model.User] 
-2025-07-10 14:35:02 2025-07-10T11:35:02.765Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@77902020
-2025-07-10 14:35:02 2025-07-10T11:35:02.765Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.example.netology_diplom_backend.model.User(2).email) 
-2025-07-10 14:35:02 2025-07-10T11:35:02.765Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.results.graph.AST      : DomainResult Graph:
-2025-07-10 14:35:02  \-EntityResultImpl [com.example.netology_diplom_backend.model.User(2)]
-2025-07-10 14:35:02  |  \-BasicFetch [com.example.netology_diplom_backend.model.User(2).password]
-2025-07-10 14:35:02 
-2025-07-10 14:35:02 2025-07-10T11:35:02.765Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.tree           : SQL AST Tree:
-2025-07-10 14:35:02     SelectStatement {
-2025-07-10 14:35:02       FromClause {
-2025-07-10 14:35:02         StandardTableGroup (u1 : com.example.netology_diplom_backend.model.User(2)) {
-2025-07-10 14:35:02           primaryTableReference : users as u1_0
-2025-07-10 14:35:02         }
-2025-07-10 14:35:02       }
-2025-07-10 14:35:02     }
-2025-07-10 14:35:02 
-2025-07-10 14:35:02 2025-07-10T11:35:02.766Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
-2025-07-10 14:35:02 2025-07-10T11:35:02.766Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.email,u1_0.password from users u1_0 where u1_0.email=?
-2025-07-10 14:35:02 2025-07-10T11:35:02.767Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.results                : Initializer list:
-2025-07-10 14:35:02       com.example.netology_diplom_backend.model.User(2) -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.User(2))@1845418448 (SingleTableEntityPersister(com.example.netology_diplom_backend.model.User))
-2025-07-10 14:35:02 
-2025-07-10 14:35:02 2025-07-10T11:35:02.864Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1781033200<open>)] for JPA transaction
-2025-07-10 14:35:02 2025-07-10T11:35:02.865Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2025-07-10 14:35:02 2025-07-10T11:35:02.868Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-07-10 14:35:02 2025-07-10T11:35:02.868Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
-2025-07-10 14:35:02 2025-07-10T11:35:02.869Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.postgresql.jdbc.PgConnection         :   setAutoCommit = false
-2025-07-10 14:35:02 2025-07-10T11:35:02.869Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@52366049]
-2025-07-10 14:35:02 2025-07-10T11:35:02.870Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.j.internal.PersistenceUnitUtilImpl   : jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
-2025-07-10 14:35:02 2025-07-10T11:35:02.871Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Created new SQL alias : t1_0
-2025-07-10 14:35:02 2025-07-10T11:35:02.871Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.example.netology_diplom_backend.model.Token)] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token] for NavigablePath [com.example.netology_diplom_backend.model.Token] 
-2025-07-10 14:35:02 2025-07-10T11:35:02.872Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@31a3df68] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token.user] for NavigablePath [com.example.netology_diplom_backend.model.Token.user] 
-2025-07-10 14:35:02 2025-07-10T11:35:02.872Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Created new SQL alias : u1_0
-2025-07-10 14:35:02 2025-07-10T11:35:02.872Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.results.graph.AST      : DomainResult Graph:
-2025-07-10 14:35:02  \-EntityResultImpl [com.example.netology_diplom_backend.model.Token]
-2025-07-10 14:35:02  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token.active]
-2025-07-10 14:35:02  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token.createdAt]
-2025-07-10 14:35:02  |  \-EntityFetchJoinedImpl [com.example.netology_diplom_backend.model.Token.user]
-2025-07-10 14:35:02  |  |  \-BasicFetch [com.example.netology_diplom_backend.model.Token.user.password]
-2025-07-10 14:35:02 
-2025-07-10 14:35:02 2025-07-10T11:35:02.872Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.ast.tree           : SQL AST Tree:
-2025-07-10 14:35:02     SelectStatement {
-2025-07-10 14:35:02       FromClause {
-2025-07-10 14:35:02         StandardTableGroup (t1 : com.example.netology_diplom_backend.model.Token) {
-2025-07-10 14:35:02           primaryTableReference : tokens as t1_0
-2025-07-10 14:35:02           TableGroupJoins {
-2025-07-10 14:35:02             left  join LazyTableGroup (u1 : com.example.netology_diplom_backend.model.Token.user) {
-2025-07-10 14:35:02               primaryTableReference : users as u1_0
-2025-07-10 14:35:02             }
-2025-07-10 14:35:02           }
-2025-07-10 14:35:02         }
-2025-07-10 14:35:02       }
-2025-07-10 14:35:02     }
-2025-07-10 14:35:02 
-2025-07-10 14:35:02 2025-07-10T11:35:02.873Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
-2025-07-10 14:35:02 2025-07-10T11:35:02.875Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.SQL                        : select t1_0.token,t1_0.active,t1_0.created_at,u1_0.email,u1_0.password from tokens t1_0 left join users u1_0 on u1_0.email=t1_0.user_login where t1_0.token=?
-2025-07-10 14:35:02 2025-07-10T11:35:02.890Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.orm.results                : Initializer list:
-2025-07-10 14:35:02       com.example.netology_diplom_backend.model.Token -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.Token)@2110848291 (SingleTableEntityPersister(com.example.netology_diplom_backend.model.Token))
-2025-07-10 14:35:02       com.example.netology_diplom_backend.model.Token.user -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.Token.user)@468258953 (ToOneAttributeMapping(NavigableRole[com.example.netology_diplom_backend.model.Token.user])@641063823)
-2025-07-10 14:35:02 
-2025-07-10 14:35:02 2025-07-10T11:35:02.896Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2025-07-10 14:35:02 2025-07-10T11:35:02.896Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1781033200<open>)]
-2025-07-10 14:35:02 2025-07-10T11:35:02.903Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
-2025-07-10 14:35:02 2025-07-10T11:35:02.905Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
-2025-07-10 14:35:02 2025-07-10T11:35:02.906Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
-2025-07-10 14:35:02 2025-07-10T11:35:02.906Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.i.AbstractFlushingEventListener    : Flushed: 1 insertions, 0 updates, 0 deletions to 2 objects
-2025-07-10 14:35:02 2025-07-10T11:35:02.907Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-2025-07-10 14:35:02 2025-07-10T11:35:02.907Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.hibernate.internal.util.EntityPrinter  : Listing entities:
-2025-07-10 14:35:02 2025-07-10T11:35:02.907Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.hibernate.internal.util.EntityPrinter  : com.example.netology_diplom_backend.model.User{password=$2a$10$G9tYV9qRqfFbpqJipmeRDuS6Lrt0.AyW9NGdFRu3NzoqxwaqGQU4u, email=user@example.com}
-2025-07-10 14:35:02 2025-07-10T11:35:02.907Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.hibernate.internal.util.EntityPrinter  : com.example.netology_diplom_backend.model.Token{createdAt=null, active=true, user=com.example.netology_diplom_backend.model.User#user@example.com, token=241d4f38-59ed-48c1-b5b9-df8453bc6d89}
-2025-07-10 14:35:02 2025-07-10T11:35:02.908Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.hibernate.SQL                        : insert into tokens (active,created_at,user_login,token) values (?,?,?,?)
-2025-07-10 14:35:02 2025-07-10T11:35:02.919Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] org.postgresql.jdbc.PgConnection         :   setAutoCommit = true
-2025-07-10 14:35:02 2025-07-10T11:35:02.919Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
-2025-07-10 14:35:02 2025-07-10T11:35:02.959Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
-2025-07-10 14:35:02 2025-07-10T11:35:02.963Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{auth-token=241d4f38-59ed-48c1-b5b9-df8453bc6d89}]
-2025-07-10 14:35:03 2025-07-10T11:35:03.009Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2025-07-10 14:35:03 2025-07-10T11:35:03.012Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-10 14:35:03 2025-07-10T11:35:03.113Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /list?limit=3
-2025-07-10 14:35:03 2025-07-10T11:35:03.142Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /list?limit=3
-2025-07-10 14:35:03 Request method: GET, URL: http://localhost:8080/list
-2025-07-10 14:35:03 Using token: 241d4f38-59ed-48c1-b5b9-df8453bc6d89
-2025-07-10 14:35:03 2025-07-10T11:35:03.147Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2025-07-10 14:35:03 2025-07-10T11:35:03.157Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.create         : Created new SQL alias : t1_0
-2025-07-10 14:35:03 2025-07-10T11:35:03.158Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.example.netology_diplom_backend.model.Token(4))] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token] for NavigablePath [com.example.netology_diplom_backend.model.Token] 
-2025-07-10 14:35:03 2025-07-10T11:35:03.161Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@66cfe175] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token(4).user] for NavigablePath [com.example.netology_diplom_backend.model.Token(4).user] 
-2025-07-10 14:35:03 2025-07-10T11:35:03.163Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@48f74a2c
-2025-07-10 14:35:03 2025-07-10T11:35:03.173Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.example.netology_diplom_backend.model.Token(4).token) 
-2025-07-10 14:35:03 2025-07-10T11:35:03.176Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.results.graph.AST      : DomainResult Graph:
-2025-07-10 14:35:03  \-EntityResultImpl [com.example.netology_diplom_backend.model.Token(4)]
-2025-07-10 14:35:03  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token(4).active]
-2025-07-10 14:35:03  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token(4).createdAt]
-2025-07-10 14:35:03  |  \-EntityFetchSelectImpl [com.example.netology_diplom_backend.model.Token(4).user]
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.176Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.tree           : SQL AST Tree:
-2025-07-10 14:35:03     SelectStatement {
-2025-07-10 14:35:03       FromClause {
-2025-07-10 14:35:03         StandardTableGroup (t1 : com.example.netology_diplom_backend.model.Token(4)) {
-2025-07-10 14:35:03           primaryTableReference : tokens as t1_0
-2025-07-10 14:35:03           TableGroupJoins {
-2025-07-10 14:35:03             left  join LazyTableGroup (u1 : com.example.netology_diplom_backend.model.Token(4).user) {
-2025-07-10 14:35:03             }
-2025-07-10 14:35:03           }
-2025-07-10 14:35:03         }
-2025-07-10 14:35:03       }
-2025-07-10 14:35:03     }
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.177Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
-2025-07-10 14:35:03 2025-07-10T11:35:03.177Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.SQL                        : select t1_0.token,t1_0.active,t1_0.created_at,t1_0.user_login from tokens t1_0 where t1_0.token=? and t1_0.active
-2025-07-10 14:35:03 2025-07-10T11:35:03.192Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.results                : Initializer list:
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.Token(4) -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.Token(4))@1946576393 (SingleTableEntityPersister(com.example.netology_diplom_backend.model.Token))
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.Token(4).user -> EntitySelectFetchInitializer(com.example.netology_diplom_backend.model.Token(4).user)@1325931254 (ToOneAttributeMapping(NavigableRole[com.example.netology_diplom_backend.model.Token.user])@641063823)
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.194Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
-2025-07-10 14:35:03 2025-07-10T11:35:03.195Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.email,u1_0.password from users u1_0 where u1_0.email=?
-2025-07-10 14:35:03 2025-07-10T11:35:03.206Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.results                : Initializer list:
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.User -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.User)@1111056745 (SingleTableEntityPersister(com.example.netology_diplom_backend.model.User))
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.209Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] c.e.n.service.AuthService                : Created Authentication for user: user@example.com
-2025-07-10 14:35:03 2025-07-10T11:35:03.210Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] c.e.n.filter.AuthTokenFilter             : Authentication set for user: user@example.com
-2025-07-10 14:35:03 2025-07-10T11:35:03.211Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /list?limit=3
-2025-07-10 14:35:03 2025-07-10T11:35:03.222Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/list?limit=3", parameters={masked}
-2025-07-10 14:35:03 2025-07-10T11:35:03.222Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.netology_diplom_backend.controller.FileController#listFiles(String, int)
-2025-07-10 14:35:03 2025-07-10T11:35:03.223Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
-2025-07-10 14:35:03 2025-07-10T11:35:03.259Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.create         : Created new SQL alias : t1_0
-2025-07-10 14:35:03 2025-07-10T11:35:03.269Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.example.netology_diplom_backend.model.Token(4))] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token] for NavigablePath [com.example.netology_diplom_backend.model.Token] 
-2025-07-10 14:35:03 2025-07-10T11:35:03.270Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@5217e8e7] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token(4).user] for NavigablePath [com.example.netology_diplom_backend.model.Token(4).user] 
-2025-07-10 14:35:03 2025-07-10T11:35:03.271Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@4742906e
-2025-07-10 14:35:03 2025-07-10T11:35:03.271Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.example.netology_diplom_backend.model.Token(4).token) 
-2025-07-10 14:35:03 2025-07-10T11:35:03.271Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.results.graph.AST      : DomainResult Graph:
-2025-07-10 14:35:03  \-EntityResultImpl [com.example.netology_diplom_backend.model.Token(4)]
-2025-07-10 14:35:03  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token(4).active]
-2025-07-10 14:35:03  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token(4).createdAt]
-2025-07-10 14:35:03  |  \-EntityFetchSelectImpl [com.example.netology_diplom_backend.model.Token(4).user]
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.271Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.ast.tree           : SQL AST Tree:
-2025-07-10 14:35:03     SelectStatement {
-2025-07-10 14:35:03       FromClause {
-2025-07-10 14:35:03         StandardTableGroup (t1 : com.example.netology_diplom_backend.model.Token(4)) {
-2025-07-10 14:35:03           primaryTableReference : tokens as t1_0
-2025-07-10 14:35:03           TableGroupJoins {
-2025-07-10 14:35:03             left  join LazyTableGroup (u1 : com.example.netology_diplom_backend.model.Token(4).user) {
-2025-07-10 14:35:03             }
-2025-07-10 14:35:03           }
-2025-07-10 14:35:03         }
-2025-07-10 14:35:03       }
-2025-07-10 14:35:03     }
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.272Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
-2025-07-10 14:35:03 2025-07-10T11:35:03.272Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.SQL                        : select t1_0.token,t1_0.active,t1_0.created_at,t1_0.user_login from tokens t1_0 where t1_0.token=? and t1_0.active
-2025-07-10 14:35:03 2025-07-10T11:35:03.273Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] org.hibernate.orm.results                : Initializer list:
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.Token(4) -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.Token(4))@1975520301 (SingleTableEntityPersister(com.example.netology_diplom_backend.model.Token))
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.Token(4).user -> EntitySelectFetchInitializer(com.example.netology_diplom_backend.model.Token(4).user)@351993138 (ToOneAttributeMapping(NavigableRole[com.example.netology_diplom_backend.model.Token.user])@641063823)
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.286Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [*/*]
-2025-07-10 14:35:03 2025-07-10T11:35:03.287Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
-2025-07-10 14:35:03 2025-07-10T11:35:03.287Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 401 UNAUTHORIZED
-2025-07-10 14:35:03 2025-07-10T11:35:03.303Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /logout
-2025-07-10 14:35:03 2025-07-10T11:35:03.314Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /logout
-2025-07-10 14:35:03 2025-07-10T11:35:03.316Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-6] o.s.s.w.a.logout.LogoutFilter            : Logging out [null]
-2025-07-10 14:35:03 2025-07-10T11:35:03.318Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?logout
-2025-07-10 14:35:03 2025-07-10T11:35:03.537Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /login?logout
-2025-07-10 14:35:03 2025-07-10T11:35:03.566Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /login?logout
-2025-07-10 14:35:03 Request method: GET, URL: http://localhost:8080/login
-2025-07-10 14:35:03 Using token: 241d4f38-59ed-48c1-b5b9-df8453bc6d89
-2025-07-10 14:35:03 2025-07-10T11:35:03.569Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
-2025-07-10 14:35:03 2025-07-10T11:35:03.573Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.sql.ast.create         : Created new SQL alias : t1_0
-2025-07-10 14:35:03 2025-07-10T11:35:03.573Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.example.netology_diplom_backend.model.Token(4))] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token] for NavigablePath [com.example.netology_diplom_backend.model.Token] 
-2025-07-10 14:35:03 2025-07-10T11:35:03.579Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@4e907073] with identifierForTableGroup [com.example.netology_diplom_backend.model.Token(4).user] for NavigablePath [com.example.netology_diplom_backend.model.Token(4).user] 
-2025-07-10 14:35:03 2025-07-10T11:35:03.579Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@4d754aff
-2025-07-10 14:35:03 2025-07-10T11:35:03.579Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.example.netology_diplom_backend.model.Token(4).token) 
-2025-07-10 14:35:03 2025-07-10T11:35:03.580Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.results.graph.AST      : DomainResult Graph:
-2025-07-10 14:35:03  \-EntityResultImpl [com.example.netology_diplom_backend.model.Token(4)]
-2025-07-10 14:35:03  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token(4).active]
-2025-07-10 14:35:03  |  +-BasicFetch [com.example.netology_diplom_backend.model.Token(4).createdAt]
-2025-07-10 14:35:03  |  \-EntityFetchSelectImpl [com.example.netology_diplom_backend.model.Token(4).user]
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.580Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.sql.ast.tree           : SQL AST Tree:
-2025-07-10 14:35:03     SelectStatement {
-2025-07-10 14:35:03       FromClause {
-2025-07-10 14:35:03         StandardTableGroup (t1 : com.example.netology_diplom_backend.model.Token(4)) {
-2025-07-10 14:35:03           primaryTableReference : tokens as t1_0
-2025-07-10 14:35:03           TableGroupJoins {
-2025-07-10 14:35:03             left  join LazyTableGroup (u1 : com.example.netology_diplom_backend.model.Token(4).user) {
-2025-07-10 14:35:03             }
-2025-07-10 14:35:03           }
-2025-07-10 14:35:03         }
-2025-07-10 14:35:03       }
-2025-07-10 14:35:03     }
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.581Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
-2025-07-10 14:35:03 2025-07-10T11:35:03.581Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.SQL                        : select t1_0.token,t1_0.active,t1_0.created_at,t1_0.user_login from tokens t1_0 where t1_0.token=? and t1_0.active
-2025-07-10 14:35:03 2025-07-10T11:35:03.583Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.results                : Initializer list:
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.Token(4) -> EntityJoinedFetchInitializer(com.example.netology_diplom_backend.model.Token(4))@1650589751 (SingleTableEntityPersister(com.example.netology_diplom_backend.model.Token))
-2025-07-10 14:35:03       com.example.netology_diplom_backend.model.Token(4).user -> EntitySelectFetchInitializer(com.example.netology_diplom_backend.model.Token(4).user)@47392664 (ToOneAttributeMapping(NavigableRole[com.example.netology_diplom_backend.model.Token.user])@641063823)
-2025-07-10 14:35:03 
-2025-07-10 14:35:03 2025-07-10T11:35:03.584Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
-2025-07-10 14:35:03 2025-07-10T11:35:03.584Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.email,u1_0.password from users u1_0 where u1_0.email=?
-2025-07-10 14:35:03 2025-07-10T11:35:03.588Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] c.e.n.service.AuthService                : Created Authentication for user: user@example.com
-2025-07-10 14:35:03 2025-07-10T11:35:03.588Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] c.e.n.filter.AuthTokenFilter             : Authentication set for user: user@example.com
-2025-07-10 14:35:03 2025-07-10T11:35:03.589Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /login?logout
-2025-07-10 14:35:03 2025-07-10T11:35:03.590Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] org.apache.tomcat.util.http.Parameters   : Parameter starting at position [0] and ending at position [6] with a value of [logout] was not followed by an '=' character
-2025-07-10 14:35:03 2025-07-10T11:35:03.590Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login?logout", parameters={masked}
-2025-07-10 14:35:03 2025-07-10T11:35:03.603Z  WARN 1 --- [netology-diplom-backend] [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2025-07-10 14:35:03 2025-07-10T11:35:03.603Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
-2025-07-10 14:35:03 2025-07-10T11:35:03.627Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error?logout
-2025-07-10 14:35:03 2025-07-10T11:35:03.628Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-10 14:35:03 2025-07-10T11:35:03.632Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-07-29 15:49:26 2025-07-29T12:49:26.529Z  INFO 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-29 15:49:26 2025-07-29T12:49:26.531Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-29 15:49:26 2025-07-29T12:49:26.532Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-29 15:49:26 2025-07-29T12:49:26.533Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-29 15:49:26 2025-07-29T12:49:26.551Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@76876421
+2025-07-29 15:49:26 2025-07-29T12:49:26.552Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@13b5598b
+2025-07-29 15:49:26 2025-07-29T12:49:26.553Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-29 15:49:26 2025-07-29T12:49:26.555Z  INFO 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2025-07-29 15:49:26 2025-07-29T12:49:26.669Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /login
+2025-07-29 15:49:26 2025-07-29T12:49:26.691Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : No auth-token header found in the request
+2025-07-29 15:49:26 2025-07-29T12:49:26.695Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: host = localhost:8080
+2025-07-29 15:49:26 2025-07-29T12:49:26.697Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: connection = keep-alive
+2025-07-29 15:49:26 2025-07-29T12:49:26.699Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: content-length = 53
+2025-07-29 15:49:26 2025-07-29T12:49:26.700Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: sec-ch-ua-platform = "Windows"
+2025-07-29 15:49:26 2025-07-29T12:49:26.700Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-29 15:49:26 2025-07-29T12:49:26.701Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: accept = application/json, text/plain, */*
+2025-07-29 15:49:26 2025-07-29T12:49:26.701Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: sec-ch-ua = "Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"
+2025-07-29 15:49:26 2025-07-29T12:49:26.702Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: content-type = application/json
+2025-07-29 15:49:26 2025-07-29T12:49:26.702Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: sec-ch-ua-mobile = ?0
+2025-07-29 15:49:26 2025-07-29T12:49:26.702Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: origin = http://localhost:8081
+2025-07-29 15:49:26 2025-07-29T12:49:26.702Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: sec-fetch-site = same-site
+2025-07-29 15:49:26 2025-07-29T12:49:26.702Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: sec-fetch-mode = cors
+2025-07-29 15:49:26 2025-07-29T12:49:26.702Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: sec-fetch-dest = empty
+2025-07-29 15:49:26 2025-07-29T12:49:26.703Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: referer = http://localhost:8081/
+2025-07-29 15:49:26 2025-07-29T12:49:26.703Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: accept-encoding = gzip, deflate, br, zstd
+2025-07-29 15:49:26 2025-07-29T12:49:26.703Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Header: accept-language = ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+2025-07-29 15:49:26 2025-07-29T12:49:26.706Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : No cookies found in the request
+2025-07-29 15:49:26 2025-07-29T12:49:26.720Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-29 15:49:26 2025-07-29T12:49:26.729Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /login
+2025-07-29 15:49:26 2025-07-29T12:49:26.737Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={}
+2025-07-29 15:49:26 2025-07-29T12:49:26.741Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.netology_diplom_backend.controller.AuthController#login(LoginRequest)
+2025-07-29 15:49:26 2025-07-29T12:49:26.954Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.netology_diplom_backend.dto.LoginRequest@40c7397a]
+2025-07-29 15:49:26 2025-07-29T12:49:26.973Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.email,u1_0.password from users u1_0 where u1_0.email=?
+2025-07-29 15:49:27 2025-07-29T12:49:27.070Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] org.hibernate.SQL                        : select t1_0.token,t1_0.active,t1_0.created_at,t1_0.user_login from tokens t1_0 where t1_0.token=?
+2025-07-29 15:49:27 2025-07-29T12:49:27.079Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] org.hibernate.SQL                        : insert into tokens (active,created_at,user_login,token) values (?,?,?,?)
+2025-07-29 15:49:27 2025-07-29T12:49:27.136Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-07-29 15:49:27 2025-07-29T12:49:27.140Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{auth-token=89748db4-3e67-4661-94f4-063200f73f23}]
+2025-07-29 15:49:27 2025-07-29T12:49:27.165Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-29 15:49:27 2025-07-29T12:49:27.166Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Request body: {"login":"user@example.com","password":"password123"}
+2025-07-29 15:49:27 2025-07-29T12:49:27.167Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-1] c.e.n.filter.AuthTokenFilter             : Response body: {"auth-token":"89748db4-3e67-4661-94f4-063200f73f23"}
+2025-07-29 15:49:27 2025-07-29T12:49:27.278Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /list?limit=3
+2025-07-29 15:49:27 2025-07-29T12:49:27.280Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : No auth-token header found in the request
+2025-07-29 15:49:27 2025-07-29T12:49:27.280Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: host = localhost:8080
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: connection = keep-alive
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: accept = */*
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: access-control-request-method = GET
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: access-control-request-headers = auth-token
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: origin = http://localhost:8081
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: user-agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-29 15:49:27 2025-07-29T12:49:27.281Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: sec-fetch-mode = cors
+2025-07-29 15:49:27 2025-07-29T12:49:27.282Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: sec-fetch-site = same-site
+2025-07-29 15:49:27 2025-07-29T12:49:27.282Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: sec-fetch-dest = empty
+2025-07-29 15:49:27 2025-07-29T12:49:27.282Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: referer = http://localhost:8081/
+2025-07-29 15:49:27 2025-07-29T12:49:27.282Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: accept-encoding = gzip, deflate, br, zstd
+2025-07-29 15:49:27 2025-07-29T12:49:27.282Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Header: accept-language = ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+2025-07-29 15:49:27 2025-07-29T12:49:27.291Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Parameter: limit = [3]
+2025-07-29 15:49:27 2025-07-29T12:49:27.306Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : No cookies found in the request
+2025-07-29 15:49:27 2025-07-29T12:49:27.307Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-29 15:49:27 2025-07-29T12:49:27.311Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-07-29 15:49:27 2025-07-29T12:49:27.312Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Request body is empty
+2025-07-29 15:49:27 2025-07-29T12:49:27.312Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] c.e.n.filter.AuthTokenFilter             : Response body is empty
+2025-07-29 15:49:27 2025-07-29T12:49:27.360Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /error?limit=3
+2025-07-29 15:49:27 2025-07-29T12:49:27.372Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-29 15:49:27 2025-07-29T12:49:27.373Z DEBUG 1 --- [netology-diplom-backend] [nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
